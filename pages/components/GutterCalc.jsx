@@ -36,10 +36,10 @@ const GutterCalc = () => {
     window.location.reload();
   };
   return (
-    <div className='min-h-screen md:pt-6 pb-8 px-2 md:px-0 bg-gradient-to-r from-sky-500 to-indigo-500'>
+    <div className='min-h-screen pt-6 md:pt-6 pb-8 px-2 md:px-0 bg-gradient-to-r from-sky-500 to-indigo-500'>
       <header className='max-w-lg mx-auto'>
         <h1 className='text-4xl font-bold text-white text-center'>
-          Gutter Calculator
+          Gutter Estimate Calculator
         </h1>
       </header>
 
