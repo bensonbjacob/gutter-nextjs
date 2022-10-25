@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import GutterCalc from './components/gutterCalc';
+import GutterCalc from './components/GutterCalc';
 
 export default function Home() {
   return (
