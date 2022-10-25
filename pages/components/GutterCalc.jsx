@@ -31,14 +31,14 @@ const GutterCalc = () => {
     window.location.reload();
   };
   return (
-    <div className='min-h-screen md:pt-6 pb-8 px-2 md:px-0'>
+    <div className='min-h-screen md:pt-6 pb-8 px-2 md:px-0 bg-gradient-to-r from-sky-500 to-indigo-500'>
       <header className='max-w-lg mx-auto'>
-        <h1 className='text-4xl font-bold text-center'>
+        <h1 className='text-4xl font-bold text-white text-center'>
           Gutter Calculator
         </h1>
       </header>
 
-      <div className='max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl'>
+      <div className='bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl'>
         <div className='mt-4'>
           <form className='flex flex-col' onSubmit={calcTotal}>
             <div className='mb-6 pt-3 rounded bg-gray-200'>
@@ -93,7 +93,7 @@ const GutterCalc = () => {
             </div>
             <div>
               <button
-                className='w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200'
+                className='w-full bg-sky-600 hover:bg-indigo-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200'
                 type='submit'
               >
                 Submit
@@ -106,7 +106,7 @@ const GutterCalc = () => {
         </div>
       </div>
 
-      <footer className='max-w-lg mx-auto flex justify-center'>
+      <footer className='max-w-lg mx-auto flex justify-center text-white'>
         <a href='https://jacobbenson.dev' className='hover:underline'>
           Contact
         </a>
