@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 const GutterCalc = () => {
   const [linear, setLinear] = useState(0);
-  const [costLinear, setCostLinear] = useState(0);
+  const [costLinear, setCostLinear] = useState(3);
   const [rightEnd, setRightEnd] = useState(0);
-  const [costRight, setCostRight] = useState(0);
+  const [costRight, setCostRight] = useState(1.75);
   const [leftEnd, setLeftEnd] = useState(0);
-  const [costLeft, setCostLeft] = useState(0);
+  const [costLeft, setCostLeft] = useState(1.75);
   const [insideCorner, setInsideCorner] = useState(0);
-  const [costInner, setCostInner] = useState(0);
+  const [costInner, setCostInner] = useState(4.25);
   const [outsideCorner, setOutsideCorner] = useState(0);
-  const [costOuter, setCostOuter] = useState(0);
+  const [costOuter, setCostOuter] = useState(4.5);
   const [total, setTotal] = useState(0);
 
   let calcTotal = (event) => {
@@ -59,7 +59,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Cost Per
+                  Cost Per Linear Foot
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -81,7 +81,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Cost Per
+                  Cost Per Right Endcap
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -101,7 +101,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Cost Per
+                  Cost Per Left Endcap
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -111,7 +111,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Inside Corners
+                  Inner Corners
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -121,7 +121,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Cost Per
+                  Cost Per Inner Corner
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -131,7 +131,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Outside Corners
+                  Outer Corners
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
@@ -141,7 +141,7 @@ const GutterCalc = () => {
               </div>
               <div className='w-full md:w-1/2 px-3 mb-6'>
                 <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
-                  Cost Per
+                  Cost Per Outer Corner
                 </label>
                 <input
                   className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white'
